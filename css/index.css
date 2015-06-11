@@ -22,7 +22,7 @@ section{
 	margin: 0 auto;
 	border-radius: 8px;
 	text-decoration: none;
-	/*display: none;*/
+	display: none;
 }
 .banner{
 	height: auto;
@@ -229,7 +229,7 @@ section{
 }
 .modal-dialog{
 	width: 240px;
-	margin-top: 40px;
+	margin-top: 30px;
 }
 .cdmc-logo{
 	display: block;
