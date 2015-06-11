@@ -230,6 +230,8 @@ section{
 .modal-dialog{
 	width: 240px;
 	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .modal{
 	width: 100%;
