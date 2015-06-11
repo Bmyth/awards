@@ -10,6 +10,8 @@ $(function(){
 	});
 
 	$(".award-pick").click(function(){
+		$(".award-pick").removeClass('active');
+		$(this).addClass('active');
 		var idx = $(this).attr('idx');
 		$(".award-list").each(function(){
 			if($(this).attr("idx") == idx){
