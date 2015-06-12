@@ -1,5 +1,5 @@
 body{
-	background: #A11414;
+	background: #93142c;
 }
 section{
 	padding-top: 20px;
@@ -10,6 +10,7 @@ section{
 #banner{
 	padding: 0;
 	position: relative;
+	overflow: hidden;
 }
 .banner{
 	height: auto;
