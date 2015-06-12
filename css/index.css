@@ -1,34 +1,40 @@
+body{
+	background: #A11414;
+}
 section{
 	padding-top: 20px;
-	padding-bottom: 75px;
+	padding-bottom: 15px;
 	position: relative;
+	background: url(../images/star.png) repeat-y;
 }
 #banner{
 	padding: 0;
 	position: relative;
 }
-#banner a{
-	position: absolute;
-	bottom: 50px;
-	right: 60px;
-	display: block;
-	background: transparent;
-	color: gold;
-	border: 1px solid gold;
-	text-align: center;
-	font-size: 20px;
-	padding: 15px;
-	width: 200px;
-	margin: 0 auto;
-	border-radius: 8px;
-	text-decoration: none;
-	display: none;
-}
 .banner{
 	height: auto;
+	width: 100%;
+	overflow: hidden;
 }
 .banner img{
+	display: block;
+	margin: 0 auto;
 	width: 100%;
+}
+@media (min-width: 1000px) and (max-width: 1400px){
+	.banner img{
+		width: 100%;
+	}
+}
+@media (max-width: 1000px){
+	.banner{
+		width: 360%;
+  		height: auto;
+  		margin-left: -130%;
+	}
+	.banner img{
+		width: 1000px;
+	}
 }
 .guest-list{
 	width: 100%;
@@ -37,6 +43,17 @@ section{
 .title{
 	text-align: center;
 	padding-bottom: 20px;
+	color: #ffdf5f;
+	margin-bottom: 0;
+}
+.title span{
+	font-size: 28px;
+	padding: 12px;
+}
+.title img{
+	width: 30%;
+	max-width: 200px;
+	padding-bottom: 6px;
 }
 .sub-title{
 	width: 80%;
@@ -44,11 +61,14 @@ section{
 	margin: 0 auto;
 }
 .sub-title h3{
-	width: 33.3333%;
+	width: 31.3333%;
 	float: left;
 	text-align: center;
 	border-bottom: 2px solid transparent;
 	padding-bottom: 15px;
+	margin-left: 1%;
+	margin-right: 1%;
+	color: #ffdf5f;
 }
 .sub-title h3.active{
 	border-bottom: 2px solid #fff;
@@ -58,6 +78,7 @@ section{
 	font-size: 1.375em;
   	line-height: 40px;
   	margin: 0;
+  	color: #fff;
 }
 .guest-list .item .avatar{
 	width: 156px;
@@ -65,6 +86,7 @@ section{
 	border-radius: 100%;
 	overflow: hidden;
 	margin: 0 auto;
+	border: 4px solid #fff;
 }
 .guest-list .item img{
 	display: block;
@@ -75,12 +97,6 @@ section{
 .owl-prev, .owl-next{
 	display: none !important;
 }
-#awards{
-	background: rgb(201, 4, 4);
-}
-#awards .title{
-	color: #fff;
-}
 #awards .sub-title{
 	max-width: 1000px;
 }
@@ -88,6 +104,9 @@ section{
 	color: #fff;
 	cursor: pointer;
 	padding-bottom: 18px;
+}
+#awards .sub-title h3 span{
+	padding-right: 5px;
 }
 .award-list{
 	width: 85%;
@@ -113,12 +132,10 @@ section{
 	font-size: 18px;
 	text-align: center;
 }
-.award-list .item .star{
+.award-list .item img{
+	width: 30px;
 	display: block;
-	font-size: 24px;
-	color: #fff;
-	text-align: center;
-	padding-bottom: 12px;
+	margin: 6px auto;
 }
 .award-list#person{
 	width: 50%;
@@ -147,7 +164,21 @@ section{
 		margin: 2.5%;
 	}
 	.award-list .item p{
-		font-size: 16px;
+		font-size: 18px;
+	}
+	.award-list#person{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 600px) {
+	.award-list .item, .award-list#person .item{
+		width: 80%;
+		margin: 10px 10%;
+		height: auto;
+	}
+	.award-list .item p{
+		font-size: 18px;
 	}
 	.award-list#person{
 		width: 100%;
@@ -169,24 +200,24 @@ section{
 	margin: 0 auto;
 	border-radius: 8px;
 }
-#intro{
-	background: #f4f3f1;
+#intro .title span{
+	padding: 12px 0;
+	font-size: 22px;
 }
-
 .intro-container .step .idx{
 	position: absolute;
-	left: 6px;
-  	top: 25px;
+	left: 20px;
+  	top: 24px;
 }
 .intro-container .step .idx p{
 	width: 36px;
 	height: 36px;
 	margin: 0 auto;
-	background: rgb(201, 4, 4);
-	color: #fff;
+	background: #ffdf5f;
+	color: #A11414;;
 	border-radius: 100%;
 	line-height: 1.8;
-  	padding-left: 14px;
+  	padding-left: 13px;
   	font-size: 20px;
 }
 
@@ -196,17 +227,24 @@ section{
 }
 .intro-container .step{
 	position: relative;
-	width: 60%;
+	width: 80%;
 	padding: 10px 30px;
 	margin: 0 auto;
-	border: 1px solid #bbb;
+	border: 1px solid #ffdf5f;
 	border-radius: 10px;
 	margin-top: 15px;
 }
 .intro-container .step h3{
 	padding-left: 40px;
 	padding-bottom: 15px;
-  	border-bottom: 1px solid #ccc;
+  	border-bottom: 1px solid #ffdf5f;
+}
+.intro-container .step h3, .intro-container .step p{
+	color: #fff;
+}
+.intro-container .step p{
+	font-size: 16px;
+	line-height: 1.8;
 }
 @media (max-width: 720px) {
 	.intro-container .step{
@@ -215,17 +253,20 @@ section{
 }
 #footer{
 	height: 260px;
-	background: #fff;
 	color: #333;
 }
 #footer p{
 	text-align: center;
 	font-size: 14px;
-	color: #888;
+	color: #eee;
 }
 #footer p a{
 	text-decoration: none;
-	color: #888;
+	color: #eee;
+}
+.cipc-logo{
+	background: #fff;
+	width: 100%;
 }
 .modal-dialog{
 	width: 240px;
@@ -241,4 +282,7 @@ section{
 	display: block;
 	margin: 20px auto;
 	width: 200px;
+}
+.owl-page span{
+	background: #fff !important;
 }
